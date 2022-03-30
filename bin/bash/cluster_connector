@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#node00
+osascript -e 'tell application "Terminal" to do script "ssh pi@10.0.0.100"'
+#node01
+osascript -e 'tell application "Terminal" to do script "ssh pi@10.0.0.5"'
+#node02
+osascript -e 'tell application "Terminal" to do script "ssh pi@10.0.0.66"'
+#node03
+osascript -e 'tell application "Terminal" to do script "ssh pi@10.0.0.20"'
+#node04
+osascript -e 'tell application "Terminal" to do script "ssh pi@10.0.0.133"'

@@ -1,0 +1,81 @@
+.\" Manpage for welcome.
+.\" Contact me@bryanwnonni.com to correct errors or typos.
+
+.TH man 8 "14 Sept 2019" "1.0" "welcome man page"
+
+.SH NAME
+welcome \- view bash aliases and env variables 
+
+.SH SYNOPSIS
+welcome [NUMBER OF LINES]
+
+.SH DESCRIPTION
+ENV Variables:
+1. JAVA_HOME=/Library/Java/Home
+2. ANDROID_HOME=/Users/hu5ky5n0w/Library/Android/sdk
+3. ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+4. NVM_DIR=$HOME/.nvm
+5. ~/Desktop/Crypto_Algo/app/crypto.env
+
+PATH:
+PATH=~/hbin:~/hbin/flutter/bin:~/hbin/vcpkg:/bin:/sbin:/dev:/var:/private/var:/usr/bin:/usr/sbin:/usr/lib:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/local/opt
+:/usr/local/include:/usr/local/share:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/share/python:/Developer/NVIDIA/CUDA-9.0/bin
+
+APP ALIASES:
+alias slck='open /Applications/Slack.app'
+alias spt='open /Applications/Spotify.app'
+alias wrd='open /Applications/Microsoft\ Word.app'
+alias trmnl='open /Applications/Utilities/Terminal.app'
+alias nts='open /Applications/Notes.app'
+alias chrm='open /Applications/Google\ Chrome.app $1'
+alias xcd='open /Applications/Xcode.app'
+alias msg='open /Applications/Messages.app'
+alias app='cd ~/Applications'
+alias wsnrt='snort -b'
+alias wtcpdmp='tcpdump -w'
+alias klpst='cd /Users/$USER/Library/Application\ Support/Postgres/var-10 | rm -rf postmaster.pid'
+alias dsp='displayplacer list'
+alias calndr='open -a Calendar.app'
+
+
+NATIVE COMMAND ALIASES:
+alias ll='ls -lsFA'
+alias hm='cd /Users/hu5ky5n0w/Desktop'
+alias dwnlds='cd ~/Downloads'
+alias dfnsr='cd /Users/hu5ky5n0w/Desktop/GSU_Courses/Fall_2019/Security_4222/Term_Project/Defensor'
+alias btcmp='cd ~/Desktop/Trilogy/'
+alias fall='cd /Users/hu5ky5n0w/Desktop/GSU_Courses/Fall_2019'
+alias cpy='echo $1 | pbcopy'
+alias gphst='history | grep $1'
+alias mip='ifconfig | grep en0'
+alias pwn='sudo chown -R `whoami`:admin $1'
+alias srsh='source ~/.bash_profile'
+alias edtsh='nano ~/.bash_profile'
+alias fndp='ps aux | grep $1'
+alias tpten='ll $1 | awk "NR >= 1 && NR <= 10"'
+alias rmvast='sudo rm -rf /tmp/avastautouninstall-1568743*'
+alias klast='kill $!; echo "$! Done"'
+alias destroy='~/hbin/bash/destroy'
+
+SSH ALIASES:
+alias cntcrypt='ssh root@157.230.224.82'
+alias cntbry='ssh root@68.183.58.208'
+
+BASH SCRIPT ALIASES:
+alias pskall='~/hbin/bash/pskall'
+alias usg='clear; ~/hbin/bash/usage'
+alias kli='~/hbin/bash/kali'
+alias apndsh='~/hbin/bash/append'
+
+CUSTOM ALIASES:
+alias strs='yes'
+alias ntrmtx='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
+
+.SH OPTIONS
+The welcome does not take any options. However, you can supply the number of lines you'd like to read.
+.SH SEE ALSO
+NA
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Bryan W Nonni (me@bryanwnonni.com)

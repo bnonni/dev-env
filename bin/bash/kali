@@ -1,0 +1,5 @@
+#!/usr/bin/expect -f
+spawn ssh hu5ky5n0w@10.0.0.7
+expect "assword:"
+send "Asdfghjkl4243!!\r"
+interact
